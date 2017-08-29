@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="js/simple-inheritence.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/01-Game.js"></script>
+    <script src="js/02-FrameUtil.js"></script>
+    <script src="js/03-Resource.js"></script>
+    <script src="js/04-Background.js"></script>
+    <script src="js/05-Pipe.js"></script>
+    <script src="js/06-Bird.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+            display: block;
+            margin:0 auto;
+            background-color: #00befe;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="900" height="600" style="border: 1px solid #000;"></canvas>
+
+<script>
+   // 实例化中介者
+    var game = new Game({
+        fps:60,
+        canvasId:"canvas"
+    })
+
+    // 运行游戏
+//    game.run();
+
+</script>
+</body>
+</html>
